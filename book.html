@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiwot Fana Specialized Hospital - Appointment Booking</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.co-createafrica.org/wp-content/uploads/2024/06/hunewlogo.jpg.webp" alt="Hospital Logo">
+                <h1>Hiwot Fana Comprehensive Specialized Hospital</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#health-info">Health Info</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Quality Healthcare Services</h2>
+                <p>Providing specialized medical care with compassion and excellence</p>
+                <a href="#appointment" class="btn">Book an Appointment</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Doctor Consultation</h3>
+                        <p>Expert medical advice from our specialized doctors.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-procedures"></i>
+                        <h3>Inpatient Care</h3>
+                        <p>Comfortable and professional inpatient services.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Laboratory Tests</h3>
+                        <p>Accurate and timely diagnostic services.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Emergency Care</h3>
+                        <p>24/7 emergency medical services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="health-info" class="health-info">
+            <div class="container">
+                <h2>Health Information</h2>
+                <div class="disease-tabs">
+                    <button class="tab-btn active" data-disease="dm">Diabetes</button>
+                    <button class="tab-btn" data-disease="htm">Hypertension</button>
+                    <button class="tab-btn" data-disease="hbv">Hepatitis B</button>
+                    <button class="tab-btn" data-disease="other">Other Diseases</button>
+                </div>
+                
+                <div class="disease-content active" id="dm-content">
+                    <h3>Diabetes Mellitus (DM)</h3>
+                    <p>Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or when the body cannot make good use of the insulin it produces.</p>
+                    <h4>Symptoms:</h4>
+                    <ul>
+                        <li>Increased thirst and hunger</li>
+                        <li>Frequent urination</li>
+                        <li>Fatigue</li>
+                        <li>Blurred vision</li>
+                        <li>Slow-healing wounds</li>
+                    </ul>
+                    <h4>Prevention & Control:</h4>
+                    <ul>
+                        <li>Maintain a healthy weight</li>
+                        <li>Eat a balanced diet low in sugar and refined carbs</li>
+                        <li>Exercise regularly</li>
+                        <li>Monitor blood sugar levels</li>
+                        <li>Take prescribed medications as directed</li>
+                    </ul>
+                </div>
+                
+                <div class="disease-content" id="htm-content">
+                    <h3>Hypertension (HTN)</h3>
+                    <p>Hypertension, or high blood pressure, is a condition in which the force of the blood against the artery walls is too high.</p>
+                    <h4>Symptoms:</h4>
+                    <ul>
+                        <li>Often no symptoms (silent killer)</li>
+                        <li>Headaches</li>
+                        <li>Shortness of breath</li>
+                        <li>Nosebleeds</li>
+                        <li>Dizziness</li>
+                    </ul>
+                    <h4>Prevention & Control:</h4>
+                    <ul>
+                        <li>Reduce salt intake</li>
+                        <li>Maintain a healthy weight</li>
+                        <li>Exercise regularly</li>
+                        <li>Limit alcohol consumption</li>
+                        <li>Take prescribed medications consistently</li>
+                    </ul>
+                </div>
+                
+                <div class="disease-content" id="hbv-content">
+                    <h3>Hepatitis B (HBV)</h3>
+                    <p>Hepatitis B is a viral infection that attacks the liver and can cause both acute and chronic disease.</p>
+                    <h4>Symptoms:</h4>
+                    <ul>
+                        <li>Fatigue</li>
+                        <li>Jaundice (yellowing of skin and eyes)</li>
+                        <li>Abdominal pain</li>
+                        <li>Loss of appetite</li>
+                        <li>Nausea and vomiting</li>
+                    </ul>
+                    <h4>Prevention & Control:</h4>
+                    <ul>
+                        <li>Get vaccinated</li>
+                        <li>Practice safe sex</li>
+                        <li>Avoid sharing needles or personal items</li>
+                        <li>Ensure safe blood transfusions</li>
+                        <li>Regular medical check-ups if infected</li>
+                    </ul>
+                </div>
+                
+                <div class="disease-content" id="other-content">
+                    <h3>Other Common Diseases</h3>
+                    <div class="other-diseases">
+                        <div class="disease-item">
+                            <h4>Malaria</h4>
+                            <p>Prevention: Use mosquito nets, eliminate standing water, take prophylactic medication when traveling to endemic areas.</p>
+                        </div>
+                        <div class="disease-item">
+                            <h4>HIV/AIDS</h4>
+                            <p>Prevention: Practice safe sex, use sterile needles, get tested regularly.</p>
+                        </div>
+                        <div class="disease-item">
+                            <h4>Respiratory Infections</h4>
+                            <p>Prevention: Wash hands frequently, cover mouth when coughing, get vaccinated against flu and pneumonia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email (Optional)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="general">General Consultation</option>
+                            <option value="dm">Diabetes Management</option>
+                            <option value="htm">Hypertension Management</option>
+                            <option value="hbv">Hepatitis B Care</option>
+                            <option value="lab">Laboratory Tests</option>
+                            <option value="emergency">Emergency Care</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="provider">Preferred Healthcare Provider</label>
+                        <select id="provider" name="provider" required>
+                            <option value="">Select provider</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="nurse">Nurse</option>
+                            <option value="specialist">Specialist</option>
+                            <option value="any">Any Available</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Haramaya University Hiwot Fana Comprehensive Specialized Hospital, Harar, Ethiopia</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+251 XX XXX XXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@hiwotfanahospital.edu.et</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Open 24/7 for emergency services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#health-info">Health Information</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Health Information</h3>
+                    <ul>
+                        <li><a href="#dm-content">Diabetes</a></li>
+                        <li><a href="#htm-content">Hypertension</a></li>
+                        <li><a href="#hbv-content">Hepatitis B</a></li>
+                        <li><a href="#other-content">Other Diseases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Hiwot Fana Specialized Hospital, Haramaya University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Appointment Confirmation</h3>
+            <p>Your appointment has been successfully booked!</p>
+            <div id="appointment-details"></div>
+            <button class="btn close-confirmation">OK</button>
+        </div>
+    </div>
+
+    <script src="book.js"></script>
+</body>
+</html>
